@@ -30,6 +30,7 @@ const babelOptions = {
 module.exports = {
   entry: {
     app1: 'src/app1.ts',
+    app2: 'src/app2.ts',
     polyfills: 'src/polyfills.ts'
   },
   output: {
