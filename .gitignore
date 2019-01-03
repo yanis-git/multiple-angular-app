@@ -574,3 +574,4 @@ ASALocalRun/
 healthchecksdb
 
 # End of https://www.gitignore.io/api/node,macos,angular,phpstorm,visualstudio,visualstudiocode
+.vscode/
