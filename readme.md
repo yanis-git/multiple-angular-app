@@ -37,6 +37,12 @@ The point is with AOT compilation, [@ngtools/webpack](https://www.npmjs.com/pack
 
 i am not able to adapt this path for each applications which have to be managed by the webpack build.
 
+
+Unexpected result
+--
+application `src/app2.ts` will have `src/app1/app.module` as entryPoint instead of him dedicated one.
+
+
 Ressource
 --
 
