@@ -29,9 +29,9 @@ The point is with AOT compilation, [@ngtools/webpack](https://www.npmjs.com/pack
 
     plugins: [
         new AngularCompilerPlugin({
-        tsConfigPath: 'path/to/tsconfig.json',
-        entryModule: 'path/to/app.module#AppModule',
-        sourceMap: true
+            tsConfigPath: 'path/to/tsconfig.json',
+            entryModule: 'path/to/app.module#AppModule',
+            sourceMap: true
         })
     ]
 
