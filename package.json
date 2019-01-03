@@ -1,0 +1,70 @@
+{
+  "name": "multiple-angular-webpack",
+  "version": "1.0.0",
+  "description": "multiple angular application in single project using webpack 4+",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rm -rf dist && ./node_modules/.bin/webpack --config webpack.config.js --mode='development'",
+    "dist": "rm -rf dist && ./node_modules/.bin/webpack --config webpack.config.js --mode='production'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanis-git/multiple-angular-app.git"
+  },
+  "keywords": [
+    "angular",
+    "aot",
+    "webpack"
+  ],
+  "author": "Yanis Ghidouche",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanis-git/multiple-angular-app/issues"
+  },
+  "homepage": "https://github.com/yanis-git/multiple-angular-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@ngtools/webpack": "^6.2.5",
+    "@types/node": "^8.10.36",
+    "@types/velocity-animate": "^1.2.33",
+    "angular2-template-loader": "^0.6.2",
+    "autoprefixer": "^7.2.6",
+    "autoprefixer-core": "^6.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "babel-polyfill": "^6.26.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "html-loader": "^0.5.5",
+    "ts-loader": "^4.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.1.1",
+    "webpack": "4.19.1",
+    "webpack-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "@angular/animations": "^7.0.0",
+    "@angular/cdk": "^7.0.0",
+    "@angular/cli": "^7.0.0",
+    "@angular/common": "^7.0.0",
+    "@angular/compiler": "^7.0.0",
+    "@angular/compiler-cli": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "@angular/elements": "^7.0.0",
+    "@angular/forms": "^7.0.0",
+    "@angular/http": "^7.0.0",
+    "@angular/language-service": "^7.0.0",
+    "@angular/material": "^7.0.0",
+    "@angular/platform-browser": "^7.0.0",
+    "@angular/platform-browser-dynamic": "^7.0.0",
+    "core-js": "^2.5.7",
+    "node": "^8.11.3",
+    "rxjs": "^6.3.3",
+    "velocity-animate": "^1.5.2",
+    "web-animations-js": "^2.3.1",
+    "yargs": "^12.0.5",
+    "zone.js": "^0.8.26"
+  }
+}

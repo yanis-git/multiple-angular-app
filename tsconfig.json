@@ -1,0 +1,36 @@
+{
+    "exclude": [
+      "node_modules"
+    ],
+    "include": [
+      "src"
+    ],
+    "compileOnSave": false,
+    "compilerOptions": {
+      "sourceMap": true,
+      "inlineSources": true,
+      "declaration": false,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "module":"esnext",
+      "experimentalDecorators": true,
+      "noImplicitAny": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "es2015",
+      "pretty": true,
+      "skipLibCheck": true,
+      "types": ["node","velocity-animate"],
+      "typeRoots": [
+        "node_modules/@types"
+      ]
+    },
+    "angularCompilerOptions": {
+      "fullTemplateTypeCheck": true,
+      "preserveWhitespaces": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+      "forkChecker": true,
+      "useWebpackText": true
+    }
+  }
