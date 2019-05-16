@@ -21,6 +21,14 @@ import 'core-js/es6/set';
  */
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
+
+/**
+ * Uncomment following import if you want to try core-js@3
+ */
+// import 'core-js/es/reflect';
+// import 'core-js/stable/reflect';
+// import 'core-js/features/reflect';
+
 /**
  * Change Detection.
  */
