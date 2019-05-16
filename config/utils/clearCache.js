@@ -13,7 +13,8 @@ module.exports = (folder, manifest) => {
     );
     
     for (key in files) {
-        fs.unlinkSync(path.resolve(folder, files[key]));
+        if(fs.existsSync(path.resolve(folder, files[key])))
+            fs.unlinkSync(path.resolve(folder, files[key]));
     }
     fs.unlinkSync(manifestPath);
 };
