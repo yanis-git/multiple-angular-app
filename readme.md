@@ -6,9 +6,14 @@ Proof of concept :
 
 How to manage multiple angular applications with single webpack build.
 
-Actual available command : 
- - `npm run dev` start **JIT** angular packaging in dist folder.
- - `npm run dist` start **AOT** angular packaging in dist folder.
+Actual available command for application 1: 
+ - `npm run dev:app1` start **JIT** angular packaging in dist folder.
+ - `npm run dist:app1` start **AOT** angular packaging in dist folder.
+
+Actual available command for application 2: 
+ - `npm run dev:app2` start **JIT** angular packaging in dist folder.
+ - `npm run dist:app2` start **AOT** angular packaging in dist folder.
+
 
 Used package : 
 --
@@ -22,7 +27,7 @@ Used package :
  - AOT : 
    - @ngtools/webpack
 
-Issue :
+Original Issue :
 --
 
 The point is with AOT compilation, [@ngtools/webpack](https://www.npmjs.com/package/@ngtools/webpack) need to have hardcoded configuration as following :
@@ -42,6 +47,12 @@ Unexpected result
 --
 application `src/app2.ts` will have `src/app1/app.module` as entryPoint instead of him dedicated one.
 
+
+Solution
+--
+
+Create dynamic configuration which will loaded relevant configuration base on execution context.
+All configuration can be set on folder `config/config`
 
 Ressource
 --
