@@ -1,7 +1,7 @@
 /**
  * outdated browser.
  */
-import "babel-polyfill";
+// import "babel-polyfill";
 import 'core-js/es6/symbol';
 import 'core-js/es6/object';
 import 'core-js/es6/function';
@@ -19,8 +19,8 @@ import 'core-js/es6/set';
 /**
  * Modern browser
  */
-import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
+import 'core-js/es6/reflect';
 
 /**
  * Uncomment following import if you want to try core-js@3

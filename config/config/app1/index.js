@@ -3,8 +3,8 @@ const helpers = require('../../utils');
 module.exports = {
     typescript: {
         entry: {
-            app1: helpers.root('src/app1.ts'),
-            polyfills: helpers.root('src/polyfills.ts')
+            polyfills: helpers.root('src/polyfills.ts'),
+            app1: helpers.root('src/app1.ts')
         },
         include: [],
         entryModule: helpers.root() + '/src/app1/app.module/#AppModule',

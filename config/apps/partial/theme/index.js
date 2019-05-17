@@ -11,7 +11,7 @@ module.exports = options => {
         },
         resolve: {
             extensions: ['.ts','.js', '.scss', '.css', '.html'],
-            modules: [helpers.root(), helpers.root('node_modules'), 'node_modules'],
+            modules: [helpers.root(), 'node_modules'],
         },
         module: {
             rules: [

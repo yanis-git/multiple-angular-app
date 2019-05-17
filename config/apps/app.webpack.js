@@ -11,9 +11,13 @@ module.exports = (config) => {
          */
         require('./partial/angular')({...config.typescript, ...config.global}),
         /**
+         * Boostrap html
+         */
+        require('./partial/dev-server')(config),
+        /**
          * Regular javascript
          */
-        require('./partial/javascript'),
+        // require('./partial/javascript'),
         /**
          * Global plugin.
          */

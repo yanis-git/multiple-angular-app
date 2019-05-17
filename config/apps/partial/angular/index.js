@@ -1,4 +1,4 @@
-const {TsConfigPathsPlugin} = require('awesome-typescript-loader/dist/index');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const helpers = require('../../../utils');
 const argv = require('yargs').argv;
 module.exports = (config) => {
@@ -17,8 +17,8 @@ module.exports = (config) => {
             extensions: ['.ts', '.js', '.html'],
             modules: [helpers.root(), 'node_modules'],
             plugins: [
-                new TsConfigPathsPlugin({
-                    configFileName: config.tsconfigPath
+                new TsconfigPathsPlugin({
+                    configFile: config.tsconfigPath
                 })
             ]
         },
@@ -49,9 +49,9 @@ module.exports = (config) => {
          */
         optimization: require('./optimization/global').optimization,
         node: {
-            global: true,
+            global: false,
             crypto: 'empty',
-            process: true,
+            process: false,
             module: false,
             clearImmediate: false,
             setImmediate: false,

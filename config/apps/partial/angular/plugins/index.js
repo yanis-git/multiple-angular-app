@@ -7,6 +7,9 @@ const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 module.exports = (config, mode) => {
     const commonPlugins = [
         new webpack.DefinePlugin({
+            process: {
+                env: {},
+            },
             'process.env.ENV': JSON.stringify(
                     (mode === 'production') ? 'prod' : 'dev'
                 ),
@@ -28,7 +31,7 @@ module.exports = (config, mode) => {
         })
     ] : [
         ...commonPlugins,
-        new ForkTsCheckerWebpackPlugin(),
+        new ForkTsCheckerWebpackPlugin({checkSyntacticErrors: true}),
         new HardSourceWebpackPlugin()
     ]
 }

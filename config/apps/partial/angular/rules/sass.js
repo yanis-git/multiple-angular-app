@@ -27,14 +27,12 @@ module.exports = options => {
             {
                 loader: 'sass-loader',
                 options: {
-                    sourceMap: true,
-                    options: {
-                        includePaths: [
-                            helpers.root('node_modules'),
-                            helpers.root('node_modules/@material') + '/*'
-                        ].map((g) => glob.sync(g))
-                            .reduce((a, c) => a.concat(c), [])
-                    }
+                sourceMap: true,
+                    includePaths: [
+                        helpers.root('node_modules'),
+                        helpers.root('node_modules/@material') + '/*'
+                    ].map((g) => glob.sync(g))
+                        .reduce((a, c) => a.concat(c), [])
                 }
             }
         ]

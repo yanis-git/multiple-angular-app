@@ -12,6 +12,7 @@
   ],
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
     "sourceMap": true,
     "inlineSources": true,
     "declaration": false,

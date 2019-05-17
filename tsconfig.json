@@ -20,7 +20,7 @@
       "target": "es2015",
       "pretty": true,
       "skipLibCheck": true,
-      "types": ["node","velocity-animate"],
+      "types": ["node"],
       "typeRoots": [
         "node_modules/@types"
       ]
