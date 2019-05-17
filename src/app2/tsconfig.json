@@ -4,7 +4,7 @@
     "vendor"
   ],
   "include": [
-    "./"
+    ".."
   ],
   "files": [
     "../app2.ts",
@@ -12,7 +12,7 @@
   ],
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "../",
     "sourceMap": true,
     "inlineSources": true,
     "declaration": false,

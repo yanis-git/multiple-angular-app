@@ -49,7 +49,7 @@ module.exports = (config) => {
          */
         optimization: require('./optimization/global').optimization,
         node: {
-            global: false,
+            global: true,
             crypto: 'empty',
             process: false,
             module: false,
