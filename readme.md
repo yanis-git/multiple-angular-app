@@ -14,6 +14,9 @@ Actual available command for application 2:
  - `npm run dev:app2` start **JIT** angular packaging in dist folder.
  - `npm run dist:app2` start **AOT** angular packaging in dist folder.
 
+If you want to quickly display output for app 1, simply run : `npm run serve`
+
+then visit `http://localhost:9000/app1.html`
 
 Used package : 
 --
